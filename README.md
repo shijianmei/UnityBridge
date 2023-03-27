@@ -1,12 +1,12 @@
 # UnityBridge
 iOS接入unity
 ## 1.打包成framework
-### 1.通过unity导出ios工程
+### 1.1通过unity导出ios工程
 
-### 2. 拷贝 UnityFramework 里的文件到工程里
+### 1.2. 拷贝 UnityFramework 里的文件到工程里
 设置头文件public
 
-### 3. 替换main.mm
+### 1.3 替换main.mm
 主要更新了下面的方法:
 ```
 - (void)runEmbeddedWithArgc:(int)argc argv:(char*[])argv appLaunchOpts:(NSDictionary*)appLaunchOpts
@@ -42,16 +42,16 @@ self->runCount += 1;
 return UnityIsPaused();
 }
 ```
-### 4.在UnityFramework里添加方法
+### 1.4 在UnityFramework里添加方法
 ```
 - (BOOL)isPaused;
 ```
 
-### 5.设置data资源属于动态库
+### 1.5设置data资源属于动态库
 
-### 6.编译生成动态库
+### 1.6编译生成动态库
 
-## 2.使用动态库
+## 2使用动态库
 ### 2.1.初始化
 在 iOS 工程main.m初始化
 ```
