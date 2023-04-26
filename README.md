@@ -1,5 +1,9 @@
 # UnityBridge
-iOS接入unity
+
+# 架构图
+
+
+# iOS接入unity
 ## 一. 打包成framework
 ### 1. 通过Unity导出iOS工程
 
